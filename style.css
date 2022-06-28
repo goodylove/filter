@@ -11,8 +11,11 @@
   width: 100px;
   height: 40px;
   margin: 4px;
-  border: inset 1px;
+  border:unset;
   border-radius: 4px;
+}
+.btn:focus-within{
+  background: rgba(49, 2, 180, 0.533);
 }
 .all-img {
   width: 350px;
@@ -28,6 +31,6 @@
   display: flex;
   justify-content: center;
 }
-.active {
-  background: rgba(49, 2, 180, 0.533);
+.btn:active {
+  box-shadow: 0 0 2px 1px;
 }

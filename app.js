@@ -20,17 +20,14 @@ const myPortFilo = portfilo.map((v) => {
 document.querySelector(".display").innerHTML = `${myPortFilo.join("")}`;
 let btn = [...document.querySelectorAll(".btn")];
 
-btn.forEach((v, a) => {
-  v.addEventListener("click", (e) => {
-    let current = document.getElementsByClassName("active");
-
-   
-    v.value = v.value.toLowerCase();
+btn.forEach((v) => {
+  v.addEventListener("click", () => {
+   v.value = v.value.toLowerCase();
     if (v.value == "show all") {
       document.querySelector(".display").innerHTML = `${myPortFilo.join("")}`;
     } else {
       if (v.value == "cars" || "Furniture" || "building") {
-        current.className += v;
+       
         const allPortfilo = portfilo.filter((p) => {
           return p.name == v.value;
         });
@@ -45,19 +42,4 @@ btn.forEach((v, a) => {
   });
 });
 
-// {/* // Create an object: */}
-// var person = {
-//   firstName  : "John",
-//   lastName   : "Doe",
-//   id     : 5566,
-//   myFunction : function() {
-//     return `<div>
-//      ${this.firstName + " " + this.lastName}
-//     </div>`
-//   }
 
-// };
-
-//   document.getElementById("demo").innerHTML =`<div>
-//   ${ person.myFunction()}
-//   </div>`
