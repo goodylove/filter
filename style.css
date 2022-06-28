@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  margin: 4px;
+  border: inset 1px;
+  border-radius: 4px;
+}
+.all-img {
+  width: 350px;
+  height: 250px;
+  margin: 4px;
+}
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-cont {
+  display: flex;
+  justify-content: center;
+}
+.active {
+  background: rgba(49, 2, 180, 0.533);
+}
