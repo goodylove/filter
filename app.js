@@ -22,12 +22,11 @@ let btn = [...document.querySelectorAll(".btn")];
 
 btn.forEach((v) => {
   v.addEventListener("click", () => {
-   v.value = v.value.toLowerCase();
+    v.value = v.value.toLowerCase();
     if (v.value == "show all") {
       document.querySelector(".display").innerHTML = `${myPortFilo.join("")}`;
     } else {
       if (v.value == "cars" || "Furniture" || "building") {
-       
         const allPortfilo = portfilo.filter((p) => {
           return p.name == v.value;
         });
@@ -41,5 +40,3 @@ btn.forEach((v) => {
     }
   });
 });
-
-
